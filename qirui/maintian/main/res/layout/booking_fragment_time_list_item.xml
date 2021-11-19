@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/time_list_item"
+    android:layout_width="80dp"
+    android:layout_height="55dp"
+    android:gravity="center"
+    android:background="@drawable/date_item_selector"
+    android:layout_marginRight="16dp">
+
+</Button>

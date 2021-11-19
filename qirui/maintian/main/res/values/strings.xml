@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">维修保养</string>
+    <string name="maintenance_appointment_text">维保预约</string>
+    <string name="maintenance_records_text">预约记录</string>
+    <string name="maintenance_text">保养</string>
+    <string name="repair_text">维修</string>
+    <string name="booking_time_toast">预约时间</string>
+    <string name="booking">发起预约</string>
+    <string name="monday">周一</string>
+    <string name="tuesday">周二</string>
+    <string name="wednesday">周三</string>
+    <string name="thursday">周四</string>
+    <string name="friday">周五</string>
+    <string name="saturday">周六</string>
+    <string name="sunday">周日</string>
+</resources>

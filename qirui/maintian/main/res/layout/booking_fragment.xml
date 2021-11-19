@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="911dp"
+    android:layout_height="match_parent"
+    android:layout_marginRight="20dp">
+
+    <TextView
+        android:id="@+id/current_position"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/date_list"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="left"
+        android:textColor="#ffe7e7e9"
+        android:drawableLeft="@drawable/ic_location_icon"
+        android:textSize="@dimen/current_location_size"
+        android:drawablePadding="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/positions_list"
+        android:layout_width="911dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/current_position"
+        android:layout_marginBottom="140dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/date_list"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/booking_button"
+        android:layout_width="379dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:background="@drawable/date_background"
+        android:text="@string/booking"
+        android:textColor="@color/color_app_name"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"/>
+</RelativeLayout>

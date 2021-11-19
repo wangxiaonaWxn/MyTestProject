@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="color_app_name">#ffE8EAED</color>
+    <drawable name="color_maintenance_appointment_selected">#ffffffff</drawable>
+    <drawable name="color_maintenance_appointment_unselected">#80ffffff</drawable>
+    <drawable name="color_maintenance_appointment_bg_unselected">#00ffffff</drawable>
+    <drawable name="color_maintenance_appointment_bg_selected">#3d4d64</drawable>
+    <color name="tab_background_color">#751a2a45</color>
+    <color name="activity_background_color">#0E1423</color>
+    <color name="records_item_address_text_color">#85e7e7e9</color>
+    <color name="position_address_text_color">#66e7e7e9</color>
+    <color name="week_text_color">#66e7e7e9</color>
+</resources>

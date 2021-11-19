@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/date_item"
+    android:layout_width="124dp"
+    android:layout_height="91dp"
+    android:gravity="center"
+    android:background="@drawable/date_item_selector"
+    android:layout_marginRight="16dp"
+    android:textSize="28sp"
+    android:lineSpacingExtra="2dp"
+    android:textColor="@color/color_app_name">
+
+</Button>
