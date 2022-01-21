@@ -1,0 +1,47 @@
+package com.mega.scenemode.menu;
+
+import android.content.Context;
+import android.util.SparseArray;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
+
+public class CommonViewHolder extends RecyclerView.ViewHolder {
+    private SparseArray<View> mViews;
+    private View mConvertView;
+
+    private CommonViewHolder(Context context, View itemView, ViewGroup parent) {
+        super(itemView);
+        mConvertView = itemView;
+        mViews = new SparseArray<>();
+    }
+
+    public static CommonViewHolder getHolder(Context context, int layoutId, ViewGroup parent) {
+        View itemView = LayoutInflater.from(context).inflate(layoutId, parent, false);
+        return new CommonViewHolder(context, itemView, parent);
+    }
+
+    @SuppressWarnings("unchecked")
+    public <T extends View> T getViewById(int id) {
+        View view = mViews.get(id);
+        if (view == null) {
+            view = mConvertView.findViewById(id);
+            mViews.put(id, view);
+        }
+        return (T) view;
+    }
+
+    public void setText(int viewId, String text) {
+        TextView textView = getViewById(viewId);
+        textView.setText(text);
+    }
+
+    public void setImage(int viewId, int imageId) {
+        ImageView imageView = getViewById(viewId);
+        imageView.setImageResource(imageId);
+    }
+}

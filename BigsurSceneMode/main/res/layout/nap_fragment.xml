@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_mode_setting">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.mega.scenemode.view.CircleSeekBar
+        android:id="@+id/seek_bar_circular"
+        android:layout_width="407dp"
+        android:layout_height="407dp"
+        android:layout_marginTop="319dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/nap_progress_text"
+        android:layout_width="328dp"
+        android:layout_height="328dp"
+        android:layout_marginTop="359dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/nap_progress_time"
+        android:textColor="@color/white"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:background="@drawable/nap_progress_bg" />
+
+    <ImageView
+        android:id="@+id/nap_edit"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="595dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/nap_edit"/>
+
+    <Button
+        android:id="@+id/mode_close"
+        android:layout_width="320dp"
+        android:layout_height="88dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="80dp"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:background="@drawable/mode_button_bg_selector"
+        android:text="@string/mode_close"/>
+</FrameLayout>

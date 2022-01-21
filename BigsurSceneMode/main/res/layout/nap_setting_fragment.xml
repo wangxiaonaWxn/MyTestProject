@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_mode_setting">
+
+    <RelativeLayout
+        android:id="@+id/scene_setting_back"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_back"
+            android:scaleType="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:text="@string/nap_setting"
+            android:textSize="48sp"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/back_image"
+            android:layout_marginStart="20dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="407dp"
+        android:layout_height="wrap_content"
+        android:text="@string/nap_progress_0"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:alpha="0.3"
+        android:layout_alignStart="@id/seek_bar_layout"
+        android:layout_marginTop="150dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="407dp"
+        android:layout_height="wrap_content"
+        android:text="@string/nap_progress_60"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:alpha="0.3"
+        android:layout_below="@id/seek_bar_layout"
+        android:layout_marginTop="30dp"
+        android:layout_alignStart="@id/seek_bar_layout"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="407dp"
+        android:text="@string/nap_progress_90"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:alpha="0.3"
+        android:gravity="center"
+        android:layout_alignTop="@id/seek_bar_layout"
+        android:layout_marginStart="224dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="407dp"
+        android:text="@string/nap_progress_30"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:alpha="0.3"
+        android:gravity="center"
+        android:layout_alignTop="@id/seek_bar_layout"
+        android:layout_toEndOf="@id/seek_bar_layout"
+        android:layout_marginStart="30dp"/>
+
+    <FrameLayout
+        android:id="@+id/seek_bar_layout"
+        android:layout_width="407dp"
+        android:layout_height="407dp"
+        android:layout_marginTop="218dp"
+        android:layout_marginStart="284dp">
+
+        <com.mega.scenemode.view.CircleSeekBar
+            android:id="@+id/seek_bar_circular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:clickable="true"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/progress_time"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="88sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textIsSelectable="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="260dp"
+            android:textSize="32sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:text="@string/nap_progress_min"/>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/nap_start_button"
+        android:layout_width="320dp"
+        android:layout_height="88dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="149dp"
+        android:layout_marginStart="328dp"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:background="@drawable/mode_button_bg_selector"
+        android:text="@string/mode_open"
+        />
+
+    <LinearLayout
+        android:layout_width="800dp"
+        android:layout_height="640dp"
+        android:layout_marginStart="930dp"
+        android:layout_marginTop="160dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/nap_audio_1"
+            android:layout_width="800dp"
+            android:layout_height="200dp"
+            android:background="@drawable/nap_audio_item_bg_selector">
+
+            <ImageView
+                android:id="@+id/nap_audio_cover_1"
+                android:layout_width="136dp"
+                android:layout_height="136dp"
+                android:layout_marginStart="42dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_nap_avatar"/>
+
+            <TextView
+                android:id="@+id/nap_audio_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/nap_audio_cover_1"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:textSize="36sp"
+                android:textColor="@color/white"
+                android:text="@string/mode_nap"/>
+
+            <TextView
+                android:id="@+id/nap_audio_subtitle_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/nap_audio_cover_1"
+                android:layout_marginStart="30dp"
+                android:layout_below="@id/nap_audio_title_1"
+                android:layout_marginTop="18dp"
+                android:textSize="28sp"
+                android:textColor="@color/gray_white"
+                android:text="@string/mode_nap" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nap_audio_2"
+            android:layout_width="800dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/nap_audio_item_bg_selector">
+
+            <ImageView
+                android:id="@+id/nap_audio_cover_2"
+                android:layout_width="136dp"
+                android:layout_height="136dp"
+                android:layout_marginStart="42dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_nap_avatar"/>
+
+            <TextView
+                android:id="@+id/nap_audio_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/nap_audio_cover_2"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:textSize="36sp"
+                android:textColor="@color/white"
+                android:text="@string/mode_nap"/>
+
+            <TextView
+                android:id="@+id/nap_audio_subtitle_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/nap_audio_cover_2"
+                android:layout_marginStart="30dp"
+                android:layout_below="@id/nap_audio_title_2"
+                android:layout_marginTop="18dp"
+                android:textSize="28sp"
+                android:textColor="@color/gray_white"
+                android:text="@string/mode_nap"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nap_audio_3"
+            android:layout_width="800dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/nap_audio_item_bg_selector">
+
+            <ImageView
+                android:id="@+id/nap_audio_cover_3"
+                android:layout_width="136dp"
+                android:layout_height="136dp"
+                android:layout_marginStart="42dp"
+                android:src="@mipmap/ic_nap_avatar"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/nap_audio_title_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/nap_audio_cover_3"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:textSize="36sp"
+                android:textColor="@color/white"
+                android:text="@string/mode_nap"/>
+
+            <TextView
+                android:id="@+id/nap_audio_subtitle_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/nap_audio_cover_3"
+                android:layout_marginStart="30dp"
+                android:layout_below="@id/nap_audio_title_3"
+                android:layout_marginTop="18dp"
+                android:textSize="28sp"
+                android:textColor="@color/gray_white"
+                android:text="@string/mode_nap"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

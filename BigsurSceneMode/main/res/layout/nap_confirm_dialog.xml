@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_mode_setting"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="300dp"
+        android:text="@string/nap_count_down_tip"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/dialog_message_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="35dp"
+        android:text="@string/nap_count_down_total"
+        android:textColor="@color/white"
+        android:alpha="0.5"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:id="@+id/dialog_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="145dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/dialog_positive"
+            android:layout_width="291dp"
+            android:layout_height="@dimen/confirm_dialog_btn_height"
+            android:background="@drawable/sync_dialog_button_selector"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mega_text_size_button" />
+
+        <View
+            android:layout_width="48dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/dialog_negative"
+            android:layout_width="291dp"
+            android:layout_height="@dimen/confirm_dialog_btn_height"
+            android:background="@drawable/sync_dialog_button_selector"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mega_text_size_button" />
+    </LinearLayout>
+</LinearLayout>

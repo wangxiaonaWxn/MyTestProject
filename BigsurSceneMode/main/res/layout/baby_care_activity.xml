@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextureView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:drawableStart="@drawable/ic_back"
+        android:text="@string/mode_baby_care"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:drawablePadding="8dp"
+        android:layout_marginStart="30dp"/>
+
+    <ImageView
+        android:id="@+id/pip_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_pip_button"
+        android:layout_gravity="bottom"/>
+
+    <TextView
+        android:id="@+id/camera_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_camera_error"
+        android:text="@string/camera_error"
+        android:textColor="#66ffffff"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+</FrameLayout>

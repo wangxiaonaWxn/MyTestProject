@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">情景模式</string>
+    <string name="mode_nap">小憩模式</string>
+    <string name="mode_smoking">抽烟模式</string>
+    <string name="mode_camping">露营模式</string>
+    <string name="mode_temperature">恒温座舱</string>
+    <string name="mode_disturb">隐私模式</string>
+    <string name="mode_baby_care">车内视频</string>
+
+    <string name="mode_nap_introduce">开启时，车辆将为您播放舒缓音乐、调整座椅，并提供闹钟叫醒服务，提供短时休息的车内环境。</string>
+    <string name="mode_smoking_introduce">检测到抽烟，车辆将通过自动降窗、开启空气净化功能，保持车内空气清新。</string>
+    <string name="mode_camping_introduce">适用于人员长时间留在车内, 为您提供舒适的车内环境</string>
+    <string name="mode_temperature_introduce">正常模式：驾驶员离车后，车辆将保持车内空调、影音娱乐、座椅调节可用，电量低于10%时自动退出。\n\n低功耗模式：驾驶员离车后，车辆以低功耗保持车内温度，电量低于10%时自动退出。</string>
+    <string name="mode_disturb_introduce">隐私模式通过隐藏通话信息和关闭铃声，保护用户通话隐私。</string>
+
+    <string name="mode_open">开启</string>
+    <string name="mode_close">关闭</string>
+    <string name="mode_normal">正常模式</string>
+    <string name="mode_low_energy">低功耗模式</string>
+
+    <string name="nap_setting">小憩模式设置</string>
+    <string name="nap_progress_min">分钟</string>
+    <string name="nap_progress_time">%s</string>
+    <string name="nap_progress_0">0</string>
+    <string name="nap_progress_30">30</string>
+    <string name="nap_progress_60">60</string>
+    <string name="nap_progress_90">90</string>
+    <string name="nap_count_down_tip">%1$d秒钟之后进入小憩模式</string>
+    <string name="nap_count_down_total">时长： %1$d分钟</string>
+
+    <string name="disable_title">禁用原因</string>
+    <string name="nap_disable">小憩模式只有在电量高于20%，四门、后备箱均关闭，且位于P挡时才能开启。</string>
+    <string name="camp_disable">露营模式只有在档位为P档且电池电量高25%才能开启。</string>
+    <string name="temperature_disable">电池电量低于20%，恒温座舱功能无法运行。</string>
+
+    <string name="temperature_setting">恒温座舱设置</string>
+    <string name="temperature_open_low_energy">车辆电量过低，10s 后将退出恒温座舱功能</string>
+    <string name="temperature_open_already">已开启恒温座舱，主人马上回来～</string>
+    <string name="temperature_open_current_temperature">当前温度</string>
+    <string name="temperature_open_temperature_number">%d℃</string>
+
+    <string name="camp_exit">露营模式已退出</string>
+    <string name="camp_warning">电池电量较低，空调已关闭！请及时给车辆补能，并注意保持车内空气清新！</string>
+
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+
+    <string name="camera_error">摄像头无信号</string>
+</resources>

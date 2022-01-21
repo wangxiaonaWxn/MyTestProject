@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextureView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="26dp"/>
+    <ImageView
+        android:id="@+id/close_window"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:src="@drawable/ic_close_window"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/pip_button"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:src="@mipmap/ic_pip_button"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="26dp"/>
+
+    <TextView
+        android:id="@+id/camera_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_camera_error"
+        android:text="@string/camera_error"
+        android:textColor="#66ffffff"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+</FrameLayout>

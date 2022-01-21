@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_mode_camping"/>
+
+    <RelativeLayout
+        android:id="@+id/main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/menu_bg"
+            android:layout_width="782dp"
+            android:layout_height="900dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:background="@mipmap/mode_car_bg">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="204dp"
+            android:layout_height="204dp"
+            android:layout_marginStart="595dp"
+            android:layout_marginTop="397dp"
+            android:src="@drawable/ic_selected_item_bg"/>
+
+        <Button
+            android:id="@+id/mode_button_left"
+            android:layout_width="200dp"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/menu_bg"
+            android:layout_marginStart="220dp"
+            android:layout_marginBottom="60dp"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            android:background="@mipmap/mode_button_bg_gray"/>
+
+        <Button
+            android:id="@+id/mode_button_right"
+            android:layout_width="200dp"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/mode_button_left"
+            android:layout_marginStart="48dp"
+            android:layout_marginBottom="60dp"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            android:background="@mipmap/mode_button_bg_gray"
+            android:text="@string/mode_low_energy"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/mode_introduce_text"
+            android:layout_width="800dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/mode_button_left"
+            android:layout_toEndOf="@id/menu_bg"
+            android:layout_marginStart="220dp"
+            android:layout_marginBottom="40dp"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:alpha="0.7"/>
+
+        <TextView
+            android:id="@+id/mode_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mode_introduce_text"
+            android:textSize="72sp"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/menu_bg"
+            android:layout_marginStart="220dp"
+            android:text="@string/app_name"/>
+
+        <ImageView
+            android:id="@+id/mode_disable"
+            android:layout_width="191dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="20dp"
+            android:layout_alignTop="@id/mode_title"
+            android:layout_toEndOf="@id/mode_title"
+            android:src="@mipmap/ic_mode_disable"/>
+
+        <ImageView
+            android:id="@+id/mode_setting"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@id/mode_title"
+            android:layout_toEndOf="@id/mode_disable"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_mode_setting"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="322dp"
+        android:layout_height="900dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="460dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/menu_list"
+            android:layout_width="322dp"
+            android:layout_height="900dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/scene_back"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_back"
+            android:scaleType="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:text="@string/app_name"
+            android:textSize="48sp"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/scene_back"
+            android:layout_marginStart="20dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</FrameLayout>

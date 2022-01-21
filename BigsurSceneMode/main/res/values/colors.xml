@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="gray_white">#80ffffff</color>
+    <color name="translucent_background">#45000000</color>
+    <color name="mega_background_dark">#000000</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="def_wheel_color">#323536</color>
+    <color name="def_reached_color">#85F7EA</color>
+    <color name="def_pointer_color">#FFFFFF</color>
+</resources>
